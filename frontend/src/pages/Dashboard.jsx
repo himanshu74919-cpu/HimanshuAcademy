@@ -1,9 +1,14 @@
 import "../styles/Dashboard.css";
+import { isLoggedIn, logoutUser, getUser } from "../auth";
 
 export default function Dashboard() {
 
+  if (!isLoggedIn()) {
+    window.location.href = "/login";
+  }
+
   const handleLogout = () => {
-    alert("Logged out!");
+    logoutUser();
     window.location.href = "/login";
   };
 
@@ -26,13 +31,14 @@ export default function Dashboard() {
       <div className="main">
 
         <div className="profile">
-          <h3>👋 Welcome Himanshu</h3>
+          <h3>👋 Welcome {getUser()}</h3>
           <p>Student Dashboard</p>
         </div>
 
         <h3>📊 Your Stats</h3>
 
         <div className="card-grid">
+
           <div className="card">
             <h2>3</h2>
             <p>Enrolled Courses</p>
@@ -47,6 +53,7 @@ export default function Dashboard() {
             <h2>12h</h2>
             <p>Study Time</p>
           </div>
+
         </div>
 
       </div>

@@ -1,36 +1,21 @@
-import { useState } from "react";
+import "../styles/Auth.css";
 
 export default function Signup() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+
+  const handleSignup = () => {
+    alert("Account Created 🚀");
+    window.location.href = "/login";
+  };
 
   return (
     <div className="auth-container">
       <h2>Signup</h2>
 
-      <input
-        type="text"
-        placeholder="Enter name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
+      <input type="text" placeholder="Enter name" />
+      <input type="email" placeholder="Enter email" />
+      <input type="password" placeholder="Enter password" />
 
-      <input
-        type="email"
-        placeholder="Enter email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-
-      <input
-        type="password"
-        placeholder="Enter password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-
-      <button>Create Account</button>
+      <button onClick={handleSignup}>Create Account</button>
     </div>
   );
 }
