@@ -1,36 +1,18 @@
-function Navbar() {
+import "./Navbar.css";
+
+export default function Navbar() {
   return (
-    <nav
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "15px 40px",
-        background: "#1e3a8a",
-        color: "white",
-      }}
-    >
-      <h2>🎓 Himanshu Academy</h2>
+    <nav className="navbar">
+      <div className="logo">🎓 Himanshu Academy</div>
 
-      <div style={{ display: "flex", gap: "20px" }}>
-        <a href="#" style={{ color: "white", textDecoration: "none" }}>
-          Home
-        </a>
+      <ul className="nav-links">
+        <li>Home</li>
+        <li>Courses</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
 
-        <a href="#" style={{ color: "white", textDecoration: "none" }}>
-          Courses
-        </a>
-
-        <a href="#" style={{ color: "white", textDecoration: "none" }}>
-          About
-        </a>
-
-        <a href="#" style={{ color: "white", textDecoration: "none" }}>
-          Contact
-        </a>
-      </div>
+      <button className="btn">Login</button>
     </nav>
   );
 }
-
-export default Navbar;
