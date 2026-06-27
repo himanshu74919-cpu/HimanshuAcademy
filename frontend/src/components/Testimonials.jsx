@@ -9,17 +9,17 @@ export default function Testimonials() {
 
         <div className="testimonial-card">
           <p>"Amazing teaching style! I learned web development easily."</p>
-          <h4>- Rahul</h4>
+          <h4>- Satish</h4>
         </div>
 
         <div className="testimonial-card">
           <p>"Ethical hacking course is very practical and useful."</p>
-          <h4>- Priya</h4>
+          <h4>- Adarsh</h4>
         </div>
 
         <div className="testimonial-card">
           <p>"Best platform for beginners in coding. Highly recommended."</p>
-          <h4>- Aman</h4>
+          <h4>- Himanshu</h4>
         </div>
 
       </div>
