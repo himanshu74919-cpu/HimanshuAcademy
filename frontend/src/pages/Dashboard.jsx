@@ -31,8 +31,8 @@ export default function Dashboard() {
       <div className="main">
 
         <div className="profile">
-          <h3>👋 Welcome {getUser()}</h3>
-          <p>Student Dashboard</p>
+          <h2>👋 Welcome {getUser()}</h2>
+          <p>Premium Student Dashboard 🚀</p>
         </div>
 
         <h3>📊 Your Stats</h3>
