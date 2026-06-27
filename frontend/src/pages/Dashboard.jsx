@@ -1,32 +1,54 @@
 import "../styles/Dashboard.css";
 
 export default function Dashboard() {
-  return (
-    <div className="dashboard">
-      <h2>📊 Student Dashboard</h2>
 
-      <div className="profile-card">
-        <h3>👤 Welcome, Student</h3>
-        <p>Email: student@example.com</p>
+  const handleLogout = () => {
+    alert("Logged out!");
+    window.location.href = "/login";
+  };
+
+  return (
+    <div className="dashboard-container">
+
+      {/* Sidebar */}
+      <div className="sidebar">
+        <h2>📚 LMS Panel</h2>
+
+        <button>🏠 Home</button>
+        <button>📚 Courses</button>
+        <button>📊 Progress</button>
+        <button>👤 Profile</button>
+
+        <button onClick={handleLogout}>🚪 Logout</button>
       </div>
 
-      <div className="course-section">
-        <h3>📚 My Courses</h3>
+      {/* Main */}
+      <div className="main">
 
-        <div className="course-box">
-          <p>💻 Web Development</p>
-          <span>Progress: 60%</span>
+        <div className="profile">
+          <h3>👋 Welcome Himanshu</h3>
+          <p>Student Dashboard</p>
         </div>
 
-        <div className="course-box">
-          <p>🛡️ Ethical Hacking</p>
-          <span>Progress: 30%</span>
+        <h3>📊 Your Stats</h3>
+
+        <div className="card-grid">
+          <div className="card">
+            <h2>3</h2>
+            <p>Enrolled Courses</p>
+          </div>
+
+          <div className="card">
+            <h2>65%</h2>
+            <p>Average Progress</p>
+          </div>
+
+          <div className="card">
+            <h2>12h</h2>
+            <p>Study Time</p>
+          </div>
         </div>
 
-        <div className="course-box">
-          <p>🤖 AI Basics</p>
-          <span>Progress: 10%</span>
-        </div>
       </div>
     </div>
   );
