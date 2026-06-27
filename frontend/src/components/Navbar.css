@@ -43,3 +43,21 @@
 .btn:hover {
   background: #1e40af;
 }
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
