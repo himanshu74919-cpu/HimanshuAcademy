@@ -4,16 +4,16 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1>🎓 Himanshu Academy</h1>
+        <h1>Himanshu Academy</h1>
 
         <p>
-          Learn Programming, Ethical Hacking, AI, Web Development,
-          and Future Technologies with Practical Projects.
+          Learn for Free. Build Your Future with Foundation, JEE,
+          NEET, Olympiad, Notes, Mock Tests and AI Doubt Support.
         </p>
 
         <div className="hero-buttons">
-          <button>📚 Explore Courses</button>
-          <button>📞 Contact Us</button>
+          <button>📚 Start Learning</button>
+          <button>🚀 Explore Free Courses</button>
         </div>
       </div>
     </section>

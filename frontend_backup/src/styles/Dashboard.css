@@ -1,0 +1,86 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f1f5f9;
+  font-family: Arial, sans-serif;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #111827, #1f2937);
+  color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar button {
+  background: transparent;
+  border: none;
+  color: #cbd5e1;
+  padding: 12px;
+  text-align: left;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.sidebar button:hover {
+  background: #2563eb;
+  color: white;
+  transform: translateX(5px);
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+/* PROFILE CARD */
+.profile {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+}
+
+/* STATS GRID */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+/* PREMIUM CARDS */
+.card {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.card h2 {
+  color: #2563eb;
+  font-size: 28px;
+}
+
+.card p {
+  color: #475569;
+}
